@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/vhr?characterEncoding=utf-8
+      username: root
+      password: root
+mybatis-plus:
+  mapper-locations: classpath:mappers/*Mapper.xml
+  type-aliases-package: com.wbj.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+server:
+  port: 8080
